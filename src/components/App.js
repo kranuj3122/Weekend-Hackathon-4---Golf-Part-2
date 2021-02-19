@@ -49,6 +49,7 @@ const App = () => {
   const reset = () => {
     setX((x) => 0);
     setY((y) => 0);
+    setRenderBall(false);
   };
 
   const renderChoice = () => {
