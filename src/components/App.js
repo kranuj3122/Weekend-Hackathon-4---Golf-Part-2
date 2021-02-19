@@ -20,22 +20,22 @@ const App = () => {
     switch (event.keyCode) {
       case 37:
         setX((x) => x - 5);
-        console.log(x,y);
+        console.log(x, y);
         console.log(ballPosition);
         break;
       case 38:
         setY((y) => y - 5);
-        console.log(x,y);
+        console.log(x, y);
         console.log(ballPosition);
         break;
       case 39:
         setX((x) => x + 5);
-        console.log(x,y);
+        console.log(x, y);
         console.log(ballPosition);
         break;
       case 40:
         setY((y) => y + 5);
-        console.log(x,y);
+        console.log(x, y);
         console.log(ballPosition);
         break;
       default:
@@ -47,9 +47,8 @@ const App = () => {
     document.addEventListener("keydown", handleEvent);
   }, []);
   const reset = () => {
-    setBallPosition({left:0,top:0});
-    setX(0);
-    setY(0);
+    setX((x) => 0);
+    setY((y) => 0);
   };
 
   const renderChoice = () => {
