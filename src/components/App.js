@@ -46,7 +46,11 @@ const App = () => {
   useEffect(() => {
     document.addEventListener("keydown", handleEvent);
   }, []);
-  const reset = () => {};
+  const reset = () => {
+    setBallPosition({left:0,top:0});
+    setX(0);
+    setY(0);
+  };
 
   const renderChoice = () => {
     if (renderBall) {
